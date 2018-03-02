@@ -23,6 +23,8 @@ public class JpaManyToManyApplication implements CommandLineRunner{
 
 	public void run(String... arg0) throws Exception {
 
+		
+		System.out.println("inside JPA many to many repository");
 		// Cleanup the tables
         postRepository.deleteAllInBatch();
         tagRepository.deleteAllInBatch();
